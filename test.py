@@ -6,6 +6,11 @@
     
 # hello_world("David")
 
+#def greeting():
+#    return 'Peace to you!'
+
+#print(greeting())
+
 # blah = [1, 2, 3], [3, 2, 1], "fast"
 # print(blah)
 
