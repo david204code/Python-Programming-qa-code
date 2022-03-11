@@ -32,13 +32,14 @@ avergeMark = round(sum(data)/len(data), 2)
 dataSorted = sorted(data)
 #print(dataSorted)
 
-#zeroTo10 = 0
-#tenTo20 = 0
-#twentyTo30 = 0
-#thirtyTo40 = 0
-#fourtyTo50 = 0
-#fiftyTo60 = 0 
-#sixtyTo70 = 0 
+zeroTo10 = 0
+tenTo20 = 0
+twentyTo30 = 0
+thirtyTo40 = 0
+fourtyTo50 = 0
+fiftyTo60 = 0 
+sixtyTo70 = 0 
+seventyTo100 = 0
 
 #for x in dataSorted:
 #    if x < 10:
@@ -55,16 +56,10 @@ dataSorted = sorted(data)
 #        fiftyTo60 += 1 
 #    elif x <= 60 and x <= 70:
 #        sixtyTo70 += 1 
+#    elif x < 100:
+#        seventyTo100 += 1
 #    else:
 #        break
-
-#print("0 - 10:", zeroTo10)
-#print("10 - 20:", tenTo20)
-#print("20 - 30:", twentyTo30)
-#print("30 - 40:", thirtyTo40)
-#print("40 - 50:", fourtyTo50)
-#print("50 - 60:", fiftyTo60)
-#print("60 - 70:", sixtyTo70)
 
 #for a in range(zeroTo10):
 #    print("*", end="")
@@ -109,3 +104,98 @@ dataSorted = sorted(data)
 #        break
 
 #print(len(tenTo20))
+
+#Part 3 calculate and print out what the pass mark should be to ensure that at least 60% of students will pass the exam
+
+#print(numberOfStudentMark) 
+#100% = 61, total number of mark is 61
+#print(f"The averge formatted to two decimal place: {avergeMark}")
+#print(dataSorted)
+lenOfDataSorted = len(dataSorted)
+#print(lenOfDataSorted)
+
+zeroTo10 = 0
+tenTo20 = 0
+twentyTo30 = 0
+thirtyTo40 = 0
+fourtyTo50 = 0
+fiftyTo60 = 0 
+sixtyTo70 = 0 
+seventyTo100 = 0
+
+i = 0
+while i < len(data):
+    #print(dataSorted[i])
+    if i <= 70 and i <= 100:
+        seventyTo100 += 1
+    elif i <= 60 and i <= 70:
+        sixtyTo70 += 1 
+    elif i <= 50 and i <= 60:
+        fiftyTo60 += 1     
+    elif i >= 40 and i <= 50:
+        fourtyTo50 += 1 
+    elif i >= 30 and i <= 40:
+        thirtyTo40 += 1
+    elif i >=20 and i <= 30:
+        twentyTo30 += 1 
+    elif i >=10 and i <= 20:
+        tenTo20 += 1
+    elif i <= 10:
+        zeroTo10 += 1
+    else:
+        break
+    i = i + 1
+print(seventyTo100)
+    #if i < 10:
+    #    zeroTo10 += 1
+    #elif i >= 10 and i <= 20:
+    #    tenTo20 += 1
+    #elif i >=20 and i <= 30:
+    #    twentyTo30 += 1 
+    #elif i >= 30 and i <= 40:
+    #    thirtyTo40 += 1 
+    #elif i >= 40 and i <= 50:
+    #    fourtyTo50 += 1 
+    #elif i <= 50 and i <= 60:
+    #    fiftyTo60 += 1 
+    #elif i <= 60 and i <= 70:
+    #    sixtyTo70 += 1 
+    #elif i <= 70 and i <= 100:
+    #    seventyTo100 += 1
+    #else:
+    #    break
+    #i = i + 1
+
+
+
+#for x in dataSorted:
+#    if x < 10:
+#        zeroTo10 += 1
+#    elif x >= 10 and x <= 20:
+#        tenTo20 += 1
+#    elif x >=20 and x <= 30:
+#        twentyTo30 += 1 
+#    elif x >= 30 and x <= 40:
+#        thirtyTo40 += 1 
+#    elif x >= 40 and x <= 50:
+#        fourtyTo50 += 1 
+#    elif x <= 50 and x <= 60:
+#        fiftyTo60 += 1 
+#    elif x <= 60 and x <= 70:
+#        sixtyTo70 += 1 
+#    elif x <= 70 and x <= 100:
+#        seventyTo100 += 1
+#    else:
+#        break
+
+#print("0 - 10:", zeroTo10)
+#print("10 - 20:", tenTo20)
+#print("20 - 30:", twentyTo30)
+#print("30 - 40:", thirtyTo40)
+#print("40 - 50:", fourtyTo50)
+#print("50 - 60:", fiftyTo60)
+#print("60 - 70:", sixtyTo70)
+#print("70 - 100:", seventyTo100)
+
+#print(zeroTo10 + tenTo20 + twentyTo30 + thirtyTo40 + fourtyTo50 + fiftyTo60 + sixtyTo70 + seventyTo100)
+#47 is 100% after the if statment
