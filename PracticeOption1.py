@@ -30,29 +30,82 @@ avergeMark = round(sum(data)/len(data), 2)
 #sort the dataInSets from lowest to highest
 #print(sorted(data))
 dataSorted = sorted(data)
-print(dataSorted)
+#print(dataSorted)
 
-zeroTo10 = 0
-tenTo20 =  []
-twentyTo30 = 0
-thirtyTo40 = 0
-fourtyTo50 = 0
-fiftyTo60 = 0 
-SixtyTo70 = 0 
+#zeroTo10 = 0
+#tenTo20 = 0
+#twentyTo30 = 0
+#thirtyTo40 = 0
+#fourtyTo50 = 0
+#fiftyTo60 = 0 
+#sixtyTo70 = 0 
+
+#for x in dataSorted:
+#    if x < 10:
+#        zeroTo10 += 1
+#    elif x >= 10 and x <= 20:
+#        tenTo20 += 1
+#    elif x >=20 and x <= 30:
+#        twentyTo30 += 1 
+#    elif x >= 30 and x <= 40:
+#        thirtyTo40 += 1 
+#    elif x >= 40 and x <= 50:
+#        fourtyTo50 += 1 
+#    elif x <= 50 and x <= 60:
+#        fiftyTo60 += 1 
+#    elif x <= 60 and x <= 70:
+#        sixtyTo70 += 1 
+#    else:
+#        break
+
+#print("0 - 10:", zeroTo10)
+#print("10 - 20:", tenTo20)
+#print("20 - 30:", twentyTo30)
+#print("30 - 40:", thirtyTo40)
+#print("40 - 50:", fourtyTo50)
+#print("50 - 60:", fiftyTo60)
+#print("60 - 70:", sixtyTo70)
+
+#for a in range(zeroTo10):
+#    print("*", end="")
+#print()
+
+#for b in range(tenTo20): 
+#    print("*", end="")
+#print()
+
+#for c in range(twentyTo30):
+#    print("*", end="")
+#print()
+
+#for d in range(thirtyTo40):
+#    print("*", end="")
+#print()
+
+#for e in range(fourtyTo50):
+#    print("*", end="")
+#print()
+
+#for f in range(fiftyTo60):
+#    print("*", end="")
+#print()
+
+#for g in range(sixtyTo70):
+#    print("*", end="")
+#print()
 
 #loop through the data and sort them into category
-for i in range(dataSorted[0]):
-    #print(dataSorted[i])
-    if dataSorted[i] < 10:
-        zeroTo10 = len(i)
-    if dataSorted[i] >= 10 and dataSorted[i] <=20:
-        #tenTo20 = tenTo20.append()
-        print(dataSorted)
-        print("*")
-    else:
-        break
-    
+#for i in range(dataSorted[0]):
+#    #print(dataSorted[i])
+#    if dataSorted[i] < 10:
+#        zeroTo10 = len(i)
+#    elif dataSorted[i] >= 10 and dataSorted[i] <=20:
+#        tenTo20.append([i])
+#        #print(dataSorted)
+#        #print(tenTo20)
+#        #print(len(tenTo20))
+#        #print("*")
+#    else:
+#        break
 
-
-
-    print(tenTo20)
+#print(len(tenTo20))
